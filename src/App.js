@@ -1,9 +1,13 @@
-import React from 'react'
-import ChatInput from './components/chat-input/'
+import React from "react";
+import ChatInput from "./components/ChatInput";
+import Conversation from "./components/Conversation";
+
+
 const App = () => {
   return (
     <div className="main-wrapper">
-      <ChatInput />
+        <Conversation />
+        <ChatInput />
     </div>
   )
 }
