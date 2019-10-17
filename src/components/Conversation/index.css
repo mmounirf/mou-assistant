@@ -1,64 +1,66 @@
 .conversation {
-    width: calc(100% - 40px);
     height: calc(100vh - 110px);
     overflow-y: auto;
     overflow-x: hidden;
-    margin: 20px;
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
-.conversation > div {
-    width: fit-content;
+.conversation > p {
+  max-width: 25%;
+  word-wrap: break-word;
+  margin-bottom: 12px;
+  line-height: 24px;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
 
-.human {
-    align-self: flex-end;
+.conversation > p:before,
+.conversation > p:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  height: 20px;
 }
 
-.human > p {
-    background-color: #0B93F6;
-    color: #FFF;
-    width: fit-content;
+p.human {
+  color: white;
+  background: #0b93f6;
+  align-self: flex-end;
 }
 
-.bot {
-    justify-content: flex-start;
+p.human:before {
+  right: -7px;
+  border-right: 20px solid #0b93f6;
+  border-bottom-left-radius: 16px 14px;
+  transform: translate(0, -2px);
 }
 
-.bot > p {
-    background-color: red;
+p.human:after {
+  right: -56px;
+  width: 26px;
+  background: white;
+  border-bottom-left-radius: 10px;
+  transform: translate(-30px, -2px);
 }
 
-.message {
-    word-wrap: break-word;
-    margin-bottom: 12px;
-    line-height: 24px;
-    position: relative;
-    padding: 10px 15px;
-    border-radius: 15px;
+p.bot {
+  background: #e5e5ea;
+  color: black;
+}
+p.bot:before {
+  left: -7px;
+  border-left: 20px solid #e5e5ea;
+  border-bottom-right-radius: 16px 14px;
+  transform: translate(0, -2px);
 }
 
-.message:before, .message:after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    height: 20px;
-}
-
-.human > .message:before {
-    right: -7px;
-    border-right: 20px solid #0B93F6;
-    border-bottom-left-radius: 16px 14px;
-    -webkit-transform: translate(0, -2px);
-    transform: translate(0, -2px);
-}
-
-.human > .message:after {
-    right: -56px;
-    width: 26px;
-    background: white;
-    border-bottom-left-radius: 10px;
-    -webkit-transform: translate(-30px, -2px);
-    transform: translate(-30px, -2px);
+p.bot:after {
+  left: 4px;
+  width: 26px;
+  background: white;
+  border-bottom-right-radius: 10px;
+  transform: translate(-30px, -2px);
 }

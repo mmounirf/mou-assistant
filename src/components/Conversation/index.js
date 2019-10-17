@@ -10,9 +10,9 @@ const Conversation = () => {
     {messages.map((item, i) => {
       return (
         <Message key={i}>
-          <div className={item.type}>
-            <p className="message">{item.message}</p>
-          </div>
+          <p className={item.type}>
+            {item.message}
+          </p>
         </Message>
       );
     })}
