@@ -9,7 +9,7 @@ const ChatInput = () => {
     const inputKeyDown = (e) => {
         if(e.keyCode === 13 && e.target.value.length) {
             e.preventDefault();
-            sendMessage({message: e.target.value, timestamp: new Date()});
+            sendMessage({message: e.target.value, timestamp: new Date(), type: 'human'});
             e.target.value = '';
         }
     }
