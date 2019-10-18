@@ -49,6 +49,7 @@ p.human:after {
 p.bot {
   background: #e5e5ea;
   color: black;
+  align-self: flex-start;
 }
 p.bot:before {
   left: -7px;
