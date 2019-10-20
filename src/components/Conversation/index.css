@@ -33,7 +33,7 @@ p.human {
 
 p.human:before {
   right: -7px;
-  border-right: 20px solid #0b93f6;
+  border-right: 20px solid #4285F4;
   border-bottom-left-radius: 16px 14px;
   transform: translate(0, -2px);
 }
@@ -47,18 +47,18 @@ p.human:after {
 }
 
 p.bot {
-  background: #e5e5ea;
-  color: black;
+  background: #0F9D58;
+  color: #FFF;
   align-self: flex-start;
 }
-p.bot:before {
+p.bot:not(.loading):before {
   left: -7px;
-  border-left: 20px solid #e5e5ea;
+  border-left: 20px solid #0F9D58;
   border-bottom-right-radius: 16px 14px;
   transform: translate(0, -2px);
 }
 
-p.bot:after {
+p.bot:not(.loading):after {
   left: 4px;
   width: 26px;
   background: white;
