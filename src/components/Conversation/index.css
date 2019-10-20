@@ -8,7 +8,7 @@
 }
 
 .conversation > p {
-  max-width: 25%;
+  max-width: 50%;
   word-wrap: break-word;
   margin-bottom: 12px;
   line-height: 24px;
@@ -27,7 +27,7 @@
 
 p.human {
   color: white;
-  background: #0b93f6;
+  background: #4285F4;
   align-self: flex-end;
 }
 

@@ -3,10 +3,8 @@ import { SEND_MESSAGE } from "./action-types";
 const initialState = {
   messages: [],
   waitingBotReply: true,
-};
-
+}
 const rootReducer = (state = initialState, action) => {
-  console.log(action.payload)
   if (action.type === SEND_MESSAGE) {
     return {
       ...state,
