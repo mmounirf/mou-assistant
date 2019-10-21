@@ -13,6 +13,11 @@ class MessageFactory {
     };
     return axios.post(process.env.REACT_APP_DIALOGFLOW_GATEWAY, payload);
   }
+
+  static scrollToBottom() {
+    const messages = document.getElementsByClassName('conversation')[0].children;
+    messages[messages.length - 1].scrollIntoView();
+  }
 }
 
 export default MessageFactory;
