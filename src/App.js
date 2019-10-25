@@ -11,7 +11,7 @@ const App = () => {
   const sendMessage = (payload) => dispatch({type: SEND_MESSAGE, payload});
   MessageFactory.send('hi').then((resp) => {
     sendMessage({message: resp.data.fulfillmentText, timestamp: new Date(), type: 'bot'});
-  });
+  }).catch(() => sendMessage({message: 'Looks like you have a connection problem' , timestamp: new Date(), type: 'error'}));
   return (
     <div className="main-wrapper">
         <Conversation />

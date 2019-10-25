@@ -15,8 +15,12 @@ class MessageFactory {
   }
 
   static scrollToBottom() {
-    const messages = document.getElementsByClassName('conversation')[0].children;
-    messages[messages.length - 1].scrollIntoView();
+
+      const messages = document.getElementsByClassName('conversation')[0].children;
+      if(messages[messages.length - 1]) {
+        messages[messages.length - 1].scrollIntoView({behavior: 'smooth', block: 'end'});
+      }
+
   }
 }
 

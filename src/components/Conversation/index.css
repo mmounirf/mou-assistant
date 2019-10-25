@@ -14,7 +14,8 @@
   line-height: 24px;
   position: relative;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 25px;
+  animation: messageIn .3s ease;
 }
 
 .conversation > p:before,
@@ -61,7 +62,24 @@ p.bot:not(.loading):before {
 p.bot:not(.loading):after {
   left: 4px;
   width: 26px;
-  background: white;
+  background: #FFF;
   border-bottom-right-radius: 10px;
   transform: translate(-30px, -2px);
+}
+
+p.error {
+  align-self: flex-start;
+  background-color: #DB4437;
+  color: #FFF;
+}
+
+@keyframes messageIn {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
 }

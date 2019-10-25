@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector } from 'react-redux';
 import Message from "../Message";
 import './index.css';
 import MessageLoading from "../MessageLoading";
+import MessageFactory from "../../factories/MessageFactory";
 
 const Conversation = () => {
   const messages = useSelector(state => state.messages);
@@ -12,6 +13,9 @@ const Conversation = () => {
       return <MessageLoading />
     }
   }
+  useEffect(() => {
+    MessageFactory.scrollToBottom();
+  });
   return (
     <div className="conversation">
     {
