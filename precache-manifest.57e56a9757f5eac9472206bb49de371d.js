@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "664eb79ba663118f2a1134a6ce6e1d21",
+    "revision": "d16994e81f2da9ccaf70c3d8362523b3",
     "url": "/mou-assistant/index.html"
   },
   {
-    "revision": "e7fd97e77e5ac7976db4",
-    "url": "/mou-assistant/static/css/main.62422efa.chunk.css"
+    "revision": "6f9e5c6bf675df8051fc",
+    "url": "/mou-assistant/static/css/main.bcee3692.chunk.css"
   },
   {
     "revision": "2103492b575978c42f80",
     "url": "/mou-assistant/static/js/2.64ac5bf0.chunk.js"
   },
   {
-    "revision": "e7fd97e77e5ac7976db4",
-    "url": "/mou-assistant/static/js/main.3a76693d.chunk.js"
+    "revision": "6f9e5c6bf675df8051fc",
+    "url": "/mou-assistant/static/js/main.e91dc222.chunk.js"
   },
   {
     "revision": "712ad7a36e234d2e25d5",
