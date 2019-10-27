@@ -1,4 +1,4 @@
-import { SEND_MESSAGE, BUILD_LIST } from "./action-types";
+import { SEND_MESSAGE, SET_TOPICS } from "./action-types";
 
 export const sendMessage = message => (
   {
@@ -9,11 +9,9 @@ export const sendMessage = message => (
   }
 )
 
-export const buildList = option => (
+export const setTopics = topics => (
   {
-    type: BUILD_LIST,
-    payload: {
-      option
-    }
+    type: SET_TOPICS,
+    payload: topics
   }
 )

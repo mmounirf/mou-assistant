@@ -1,8 +1,8 @@
-import { SEND_MESSAGE, BUILD_LIST } from "./action-types";
+import { SEND_MESSAGE, SET_TOPICS } from "./action-types";
 
 const initialState = {
   messages: [],
-  intentsList: [],
+  topics: [],
   waitingBotReply: true,
 }
 const rootReducer = (state = initialState, action) => {
@@ -13,10 +13,10 @@ const rootReducer = (state = initialState, action) => {
       waitingBotReply: action.payload.type === 'human'
     }
   }
-  if (action.type === BUILD_LIST) {
+  if (action.type === SET_TOPICS) {
     return {
       ...state,
-      intentsList: [...state.intentsList, action.payload]
+      topics: [...state.topics, ...action.payload]
     }
   }
   return state;
