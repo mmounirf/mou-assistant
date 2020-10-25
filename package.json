@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://mmounirf.github.io/mou-assistant",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.0",
     "env-cmd": "^10.0.1",
     "gh-pages": "^2.1.1",
     "react": "^16.10.2",
